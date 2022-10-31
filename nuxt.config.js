@@ -4,7 +4,8 @@ export default {
   alias: {
     Root: resolve(__dirname, './'),
     Elements: resolve(__dirname, './components'),
-    Parts: resolve(__dirname, './pages')
+    Parts: resolve(__dirname, './pages'),
+    Assets: resolve(__dirname, './assets')
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -56,5 +57,8 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/]
+  },
+  styleResources: {
+    scss: ['./assets/scss/*.scss']
   }
 };

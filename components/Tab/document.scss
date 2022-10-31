@@ -1,0 +1,55 @@
+.document-tab {
+  &__document {
+    display: inline-block;
+    width: 100%;
+
+    & > span {
+      font-size: 1em;
+      line-height: 1.333em;
+      width: calc(33% - 17px);
+      float: left;
+
+      &:not(:first-of-type) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__btns {
+    float: right;
+  }
+
+  .el-upload,
+  .el-upload-dragger {
+    width: 100%;
+    height: auto;
+  }
+
+  .el-upload-dragger {
+    padding: 0.5em 0;
+  }
+
+  .el-upload__text {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-focus: none;
+
+    em:hover {
+      border-bottom: 1px solid;
+    }
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+
+  .el-loading-spinner {
+    margin-top: -1.75em;
+
+    .circular {
+      width: 3.5em;
+      height: 3.5em;
+    }
+  }
+}

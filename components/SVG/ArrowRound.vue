@@ -1,0 +1,15 @@
+<template>
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12Z"
+      fill="#E9EDF2"
+    />
+    <path d="M9 7L14 12L9 17V7Z" fill="#21272C" />
+  </svg>
+</template>

@@ -1,0 +1,131 @@
+@import '../../../assets/scss/variables/colors';
+@import '../../../assets/scss/utilites/typography';
+@import '../../../assets/scss/utilites/flex';
+
+#content.TSC {
+  .subpanel {
+    @extend %flex;
+    justify-content: space-between;
+
+    .label-value {
+      // display: flex;
+      flex: 0 0 100%;
+      height: auto;
+      white-space: normal;
+
+      // &__label {
+      //   margin-right: 5px;
+      //   flex: 30%;
+      // }
+
+      &__value {
+        line-height: 1em;
+        // flex: 70%;
+      }
+    }
+
+    .el-loading-mask {
+      background-color: rgba(242, 242, 242, 0.8);
+    }
+
+    .is-lazy .el-tabs__item {
+      background-color: $TSC_MIDDLE_GREY;
+    }
+
+    .subpanel__tab-col {
+      border-radius: 9px;
+    }
+
+    &__tab-col {
+      border: 1px solid $TSC_DARK_GREY;
+      background: $white;
+      border-radius: 4px 4px 0 0;
+      flex: 1;
+      overflow: hidden;
+
+      &:first-child {
+        flex: 2;
+        margin-right: 1.5em;
+      }
+
+      .label-value {
+        &__value * {
+          word-break: break-word;
+        }
+      }
+
+      .el-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex: 1;
+
+        &__header {
+          margin: 0;
+        }
+
+        &__content {
+          font-size: 1em;
+          // margin: 0.83em 1.67em;
+          @include text-wrapper(1em, 1.25em);
+          letter-spacing: 0.015em;
+        }
+
+        &__nav {
+          display: flex;
+          flex-direction: row;
+          background-color: $TSC_MIDDLE_GREY;
+          width: 100%;
+          background: $TSC_MIDDLE_GREY;
+          border-bottom: none;
+
+          &-wrap {
+            margin: 0;
+          }
+        }
+
+        &__active-bar {
+          display: none;
+          width: 0 !important;
+        }
+
+        &__item {
+          flex: 1;
+          padding: 0;
+          height: 3.125em;
+          background-color: $TSC_MIDDLE_GREY;
+          color: $TSC_MOUSE_GREY;
+          @include text-wrapper(1.33em, 3.125em, 500);
+          letter-spacing: 0.015em;
+          text-align: center;
+          border-bottom: 1px solid $TSC_DARK_GREY;
+
+          &.is-active {
+            background-color: $TSC_LIGHT_GREY;
+            color: $TSC_MOUSE_GREY;
+            // pointer-events: none;
+          }
+
+          &.is-focus {
+            box-shadow: none;
+            border: none;
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid $TSC_DARK_GREY;
+          }
+        }
+
+        &.is-only .el-tabs__item {
+          background-color: $TSC_MIDDLE_GREY;
+        }
+
+        .el-tab-pane {
+          & > div {
+            margin: 0.83em 1.67em;
+          }
+        }
+      }
+    }
+  }
+}

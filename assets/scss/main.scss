@@ -1,0 +1,79 @@
+@import 'variables/variables';
+@import 'utilites/utilites';
+
+body {
+  @include text-wrapper(10px, 1.25em);
+
+  // @media screen and (max-width: 1300px) {
+  //   font-size: 10px;
+  // }
+
+  // @media screen and (max-width: 1600px) and (min-width: 1301px) {
+  //   font-size: 11px;
+  // }
+
+  // @media screen and (min-width: 2001px) {
+  //   font-size: 14px;
+  // }
+}
+
+#app {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+#content {
+  background: $white;
+
+  &.TSC {
+    // font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    padding: 0;
+    // min-width: 1280px;
+    margin: 0 auto;
+    font-size: 1em;
+
+    .front:not(.candidate-sel),
+    .moduleTitle {
+      width: 91.1772%;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+    }
+
+    &.edit-view .moduleTitle,
+    &.detail-view .moduleTitle {
+      display: none;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  // width: 100%;
+}
+
+pre {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: normal;
+  background-color: inherit;
+  border: none;
+  word-break: unset;
+  word-wrap: unset;
+}
+
+.sidebar {
+  background-color: #ffffff !important;
+}
+
+#bootstrap-container {
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+}

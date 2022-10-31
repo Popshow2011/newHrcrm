@@ -1,0 +1,19 @@
+[
+  [
+    {
+      "id": "save",
+      "type": "ajax",
+      "name": "Сохранить"
+    },
+    {
+      "id": "preload",
+      "type": "ajax",
+      "name": "Предпросмотр"
+    },
+    {
+      "id": "cancel",
+      "type": "ajax",
+      "name": "Отмена"
+    }
+  ]
+]

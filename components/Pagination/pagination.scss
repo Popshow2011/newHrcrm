@@ -1,0 +1,70 @@
+@import '../../../assets/scss/variables/colors';
+
+.el-pagination {
+  display: inline-block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 0;
+
+  button {
+    border: none;
+    padding: 0;
+  }
+
+  .btn-prev,
+  .btn-next {
+    font-size: 1em !important;
+    min-width: unset !important;
+    line-height: inherit !important;
+    height: auto !important;
+    background-color: $WHITE !important;
+    color: $TSC_MOUSE_GREY !important;
+    margin: 0 !important;
+
+    &[disabled],
+    &:disabled {
+      // line-height: 28px;
+      // height: 28px;
+      opacity: 0.5;
+      color: inherit;
+
+      i {
+        cursor: not-allowed !important;
+        background-color: inherit;
+      }
+    }
+
+    &:not(:disabled):hover .el-icon {
+      // background-color: rgba(204, 204, 204, 0.5);
+      background-color: $WHITE;
+      border: 1px solid $TSC_MOUSE_GREY;
+    }
+
+    .el-icon {
+      font-weight: normal;
+      font-size: 1.166em;
+      margin: 0;
+      padding: 0.333em;
+      border-radius: 3px;
+      border: 1px solid $WHITE;
+    }
+
+    // & + .btn-prev,
+    // & + .btn-next {
+    //   margin-left: 0.5em !important;
+    // }
+  }
+
+  span:not([class*='suffix']) {
+    font-size: 1.1666em;
+    font-weight: normal;
+    color: $TSC_MOUSE_GREY;
+    letter-spacing: -0.005em;
+    height: 1.64286em;
+    line-height: 1.64286em;
+    margin: 0 4px;
+  }
+}

@@ -1,0 +1,250 @@
+@import 'colors';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/front/public/style/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('/front/public/style/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+#menu {
+  width: 1200px;
+  margin: 0 auto;
+  align-self: center;
+  -ms-grid-row-align: center;
+  // margin-top: 60px;
+  position: relative;
+  height: 100%;
+
+  .el-upload input[type='file'] {
+    display: none;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .el-avatar img {
+    width: 100%;
+  }
+
+  a:not(.name-big) {
+    &:hover,
+    &:hover * {
+      color: $blue-120;
+    }
+  }
+
+  .text {
+    margin: 0px;
+    align-self: center;
+    -ms-grid-row-align: center;
+    font-size: 16px;
+    margin: 2px 5px 0px 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .blue {
+    color: $blue-120;
+  }
+
+  .blue-130 {
+    color: $blue-130;
+  }
+
+  .primary {
+    color: $primary-text;
+  }
+
+  .secondary {
+    color: $secondary-text;
+  }
+
+  .disabled-reg {
+    color: $disabled-reg-text;
+  }
+
+  .disabled-med {
+    color: $disabled-med-text;
+  }
+
+  .red {
+    color: $red;
+  }
+
+  .fw-500 {
+    font-family: 'Roboto Medium';
+    font-weight: 500;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .shadow-lvl-1 {
+    box-shadow: 0px 1px 4px rgba(33, 39, 44, 0.09);
+  }
+
+  .shadow-lvl-2 {
+    box-shadow: 0px 4px 15px rgba(33, 39, 44, 0.1);
+  }
+
+  .shadow-lvl-3 {
+    box-shadow: 0px 0px 40px rgba(33, 39, 44, 0.1);
+  }
+
+  .shadow-lvl-4 {
+    box-shadow: 0px 0px 55px rgba(33, 39, 44, 0.1);
+  }
+
+  .brs-4 {
+    border-radius: 4px;
+  }
+
+  .brs-8 {
+    border-radius: 8px;
+  }
+
+  .fz-14 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .link {
+    color: $blue-120;
+
+    &:hover {
+      color: $blue-130;
+    }
+
+    &-space {
+      margin-bottom: 24px;
+    }
+
+    &-space-top {
+      color: $black-30;
+      margin-top: 33px;
+      margin-bottom: 24px;
+    }
+
+    &-space-bottom {
+      color: $black-30;
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .el-popper .el-select-dropdown__item {
+    color: $black-200;
+  }
+
+  .el-input {
+    &.big,
+    &.big .el-input__inner {
+      height: 40px;
+      line-height: 40px;
+    }
+
+    &.medium,
+    &.middle .el-input__inner,
+    &.medium .el-input__inner {
+      height: 32px;
+      line-height: 32px;
+    }
+
+    &.small,
+    &.small .el-input__inner {
+      height: 24px;
+      line-height: 24px;
+    }
+
+    &__prefix {
+      left: 16px;
+    }
+
+    &--prefix:not(.el-date-editor) .el-input__inner {
+      padding-left: 44px;
+      line-height: 24px;
+    }
+
+    &--suffix:not(.el-date-editor) .el-input__inner {
+      padding-right: 36px;
+    }
+
+    &__prefix .el-icon-date:before {
+      display: none;
+      // content: '';
+      // width: 24px;
+      // height: 24px;
+      // display: inline-block;
+      // background-image: url('/front/public/style/img/date.svg');
+      // background-size: 20px 20px;
+      // background-repeat: no-repeat;
+      // background-position: center center;
+      // position: absolute;
+      // top: 50%;
+      // left: 0;
+      // margin-top: -12px;
+    }
+
+    &__inner {
+      border-radius: 4px;
+      color: $black-200;
+      font-size: 16px;
+      padding: 0 10px 0 12px;
+      // line-height: 24px;
+      // height: 40px;
+      border: 1px solid $black-30;
+
+      &:hover {
+        background: $black-10;
+      }
+
+      &:focus {
+        border-color: $blue-120;
+      }
+
+      // &:invalid {
+      //   border: 1px solid red;
+      // }
+    }
+
+    &__suffix,
+    &__prefix {
+      line-height: 1;
+    }
+
+    &.is-disabled {
+      opacity: 1 !important;
+
+      .el-input__inner {
+        background-color: $black-10;
+        color: $black-80;
+      }
+    }
+
+    .el-input__inner[readonly] {
+      cursor: default;
+
+      &:hover {
+        background-color: $white;
+      }
+
+      &:focus {
+        border-color: $black-30;
+      }
+    }
+  }
+}

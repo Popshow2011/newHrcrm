@@ -1,0 +1,27 @@
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  // font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin bg-icon($width, $height, $path, $hasSizes: 1) {
+  content: '';
+  @if $hasSizes > 0 {
+    width: $width;
+    height: $height;
+  }
+
+  display: inline-block;
+  background-image: url('/front/public/style/img/#{$path}');
+  background-size: $width $height;
+  background-repeat: no-repeat;
+}

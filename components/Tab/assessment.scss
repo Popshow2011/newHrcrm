@@ -1,0 +1,308 @@
+.assessment-tab {
+  padding: 32px 0 40px 0;
+
+  .el-collapse {
+    border: none;
+
+    &-item {
+      margin-bottom: 5px;
+
+      &__header {
+        display: flex;
+        background-color: #fff;
+        height: 32px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bold;
+        color: $black-190;
+        margin-bottom: 20px;
+        border: none;
+
+        &.is-active {
+          color: $black-190;
+          font-family: 'Roboto', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+
+      &__arrow {
+        margin: 0;
+        margin-left: 16px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+
+        &.is-active {
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+        }
+      }
+
+      &__wrap {
+        border: none;
+        background: inherit;
+      }
+
+      &__content {
+        font-size: 1em;
+        padding-bottom: 0;
+      }
+    }
+
+    .empty {
+      color: #909399;
+    }
+
+    .assessment-form {
+      h3 {
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 28px;
+        // color: $blue-120;
+        align-self: stretch;
+        -ms-grid-row-align: stretch;
+        margin-bottom: 0;
+      }
+
+      label {
+        margin: 0;
+        padding: 0;
+      }
+
+      .el-date-editor.el-input {
+        width: 50%;
+      }
+
+      .el-radio:not(:last-of-type) {
+        margin-right: 40px;
+      }
+
+      &__section {
+        background-color: $black-10;
+        padding: 24px;
+        border-radius: 4px;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        .row:last-child .el-radio {
+          padding: 0;
+        }
+      }
+
+      &__wrapper {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      &__button-panel {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 12px;
+        margin: auto;
+        width: 100%;
+        max-width: 712px;
+        bottom: 0;
+        z-index: 99;
+        position: fixed;
+        border-top: 1px solid $black-30;
+
+        .el-button {
+          height: 40px;
+          width: 208px;
+          text-transform: unset;
+          color: $blue-120;
+          background: #eff8ff;
+          border: unset;
+          align-self: center;
+          -ms-grid-row-align: center;
+
+          &:hover {
+            background: #d6ebff;
+          }
+
+          :disabled {
+            background: $black-10;
+            color: $black-50;
+          }
+        }
+
+        &.relative {
+          position: relative;
+          max-width: 100%;
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .row {
+        margin: 0;
+        margin-top: 20px;
+        overflow: hidden;
+        margin-bottom: 0 !important;
+
+        &--with-border {
+          border-radius: 3px;
+        }
+
+        &:last-child label.el-radio {
+          margin-bottom: 0;
+        }
+      }
+
+      .el-radio {
+        display: inline-block;
+        margin-bottom: 4px;
+
+        &__label {
+          line-height: 24px;
+          display: inline-block;
+          vertical-align: middle;
+          // color: #282f36;
+          font-size: 16px;
+          padding-left: 8px;
+        }
+
+        &__inner {
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+        }
+      }
+
+      .el-rate__icon {
+        font-size: 24px;
+        margin-right: 4px;
+        // height: 24px;
+      }
+
+      .el-form-item {
+        margin-bottom: 0;
+
+        &__content {
+          padding-top: 12px;
+        }
+
+        &__label {
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+          color: $black-200;
+        }
+      }
+
+      .candidate-jobs {
+        margin-bottom: 15px;
+
+        &__header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          &-item {
+            // color: $black-50;
+            border-radius: 4px;
+            align-content: center;
+
+            .el-input {
+              height: 40px !important;
+              resize: none !important;
+              border-radius: 4px;
+
+              &__inner {
+                height: 40px !important;
+                padding: 8px 16px;
+                font-size: 16px;
+                line-height: 24px;
+                color: $black-50;
+                background: white;
+                border-radius: 4px;
+              }
+            }
+
+            &:not(:first-child) {
+              margin-left: 32px;
+              height: 40px;
+              align-content: center;
+            }
+          }
+        }
+
+        .el-form-item__content {
+          width: 50%;
+        }
+
+        &__answer {
+          display: grid;
+          grid-auto-flow: column;
+          grid-auto-columns: 130px auto;
+          margin-bottom: 5px;
+
+          label {
+            font-size: 12px;
+            line-height: 28px;
+          }
+        }
+      }
+
+      .interview-results {
+        &__top {
+          display: grid;
+          grid-auto-flow: column;
+          justify-content: space-between;
+          margin-bottom: 12px;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 24px;
+        }
+      }
+
+      .is-disabled {
+        opacity: 1;
+
+        input,
+        textarea {
+          border: 1px solid $black-30 !important;
+          background-color: $black-10 !important;
+          color: $black-50 !important;
+        }
+      }
+    }
+  }
+
+  // .scale {
+  //   display: grid;
+  //   grid-auto-flow: row;
+  //   border: 1px solid #dcdfe6;
+  //   border-radius: 4px;
+  //   padding: 5px;
+
+  //   &-row {
+  //     display: grid;
+  //     grid-auto-flow: column;
+  //     padding: 5px;
+
+  //     &:first-child {
+  //       border-bottom: 1px solid #dcdfe6;
+  //     }
+  //   }
+
+  //   &-col {
+  //     display: grid;
+  //     text-align: center;
+  //     margin: 0 auto;
+  //   }
+
+  //   .num {
+  //     width: 16px;
+  //     color: #606266;
+  //   }
+  // }
+}

@@ -1,0 +1,54 @@
+{
+  "required": true,
+  "source": "non-db",
+  "vname": "LBL_PUBL_VAC_AUTHOR",
+  "type": "authorise",
+  "comments": "",
+  "help": "",
+  "importable": "true",
+  "duplicate_merge": "disabled",
+  "duplicate_merge_dom_value": "0",
+  "audited": false,
+  "unified_search": false,
+  "merge_filter": "disabled",
+  "len": "255",
+  "rname": "name",
+  "studio": {
+    "listview": false,
+    "popuplist": false
+  },
+  "value": [
+    {
+      "panel_id": "lbl_authorization",
+      "lbl": "Авторизация на карьерных сайтах",
+      "rows": [
+        [
+          {
+            "required": true,
+            "source": "non-db",
+            "vname": "LBL_PUBL_VAC_AUTHOR",
+            "type": "authorise",
+            "comments": "",
+            "help": "",
+            "importable": "true",
+            "duplicate_merge": "disabled",
+            "duplicate_merge_dom_value": "0",
+            "audited": false,
+            "unified_search": false,
+            "merge_filter": "disabled",
+            "len": "255",
+            "rname": "name",
+            "studio": {
+              "listview": false,
+              "popuplist": false
+            },
+            "lbl": "Авторизация на карьерных сайтах",
+            "name": "publ_vac_author"
+          }
+        ]
+      ]
+    }
+  ],
+  "lbl": "Авторизация на карьерных сайтах",
+  "name": "publ_vac_author"
+}

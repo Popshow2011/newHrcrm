@@ -1,0 +1,24 @@
+[
+  [
+    {
+      "id": "publish",
+      "type": "ajax",
+      "name": "Опубликовать"
+    },
+    {
+      "id": "save_publicator",
+      "type": "ajax",
+      "name": "Сохранить изменения"
+    },
+    {
+      "id": "save_as_template",
+      "type": "ajax",
+      "name": "Сохранить как черновик"
+    },
+    {
+      "id": "save_as_template_not_publish",
+      "type": "ajax",
+      "name": "Сохранить без публикации"
+    }
+  ]
+]

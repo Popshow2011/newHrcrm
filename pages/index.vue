@@ -1,11 +1,23 @@
 <template>
-  <Avatar title="sdfsdfsd" />
+  <div>
+    <div v-html="link"></div>
+    <avatar />
+  </div>
 </template>
 
 <script>
-import Avatar from 'Elements/Avatar/Avatar.vue';
+import { formatHtml } from '@/utils/helpers';
+import Avatar from '~/components/Avatar/Avatar.vue';
 export default {
-  name: 'IndexPage',
-  components: { Avatar }
+  components: { Avatar },
+  mixin: [formatHtml],
+  data: function () {
+    return {
+      link: null
+    };
+  },
+  mounted() {
+    this.link = '';
+  }
 };
 </script>

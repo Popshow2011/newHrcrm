@@ -1,0 +1,83 @@
+.photo-upload {
+  width: 100%;
+  top: 0;
+  right: -20%;
+  position: absolute;
+}
+
+.uploaded {
+  .el-upload {
+    display: none;
+  }
+}
+
+.el-upload,
+.el-date-editor.el-input,
+.el-select {
+  width: 100%;
+}
+
+.photo-block {
+  position: relative;
+  // width: 148px;
+  // height: 148px;
+  border: 1px solid #dcdfe6;
+
+  .delete-photo {
+    // position: absolute;
+    top: -200px;
+    height: 200px !important;
+    width: 198px;
+
+    &.el-button {
+      .medium {
+        height: 200px;
+        align-content: center;
+      }
+    }
+
+    .button-content {
+      svg {
+        path {
+          fill: transparent;
+        }
+      }
+    }
+  }
+
+  .delete-photo:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+
+    .button-content {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  // img {
+  //   width: 148px;
+  // }
+}
+
+.el-upload--picture-card {
+  // width: 148px;
+  position: absolute;
+  z-index: 1;
+  height: auto;
+}
+
+.el-upload-dragger {
+  height: 100%;
+  width: 100%;
+}
+
+.el-upload-list--picture-card {
+  // width: 148px;
+  position: absolute;
+  z-index: 2;
+  margin: 0;
+}

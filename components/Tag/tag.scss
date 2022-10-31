@@ -1,0 +1,117 @@
+.tags {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+
+  & > .el-button {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .el-collapse {
+    border: none;
+    clear: both;
+  }
+
+  .el-collapse-item {
+    &__wrap {
+      border: none;
+    }
+
+    & > div:first-child {
+      display: none;
+    }
+
+    &__content {
+      padding: 0;
+      font-size: 1em;
+    }
+  }
+}
+
+.saved-tags {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5em;
+  position: relative;
+
+  .el-tag {
+    position: relative;
+    cursor: default;
+  }
+
+  .el-loading-spinner {
+    margin-top: -11px;
+
+    .circular {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+.tag-form {
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1px;
+
+  .el-button {
+    .el-loading-spinner {
+      margin-top: -14px;
+
+      .circular {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  .tag-search {
+    flex: 0.7;
+    margin-right: 0.833em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .el-select__input {
+    background-color: transparent !important;
+  }
+
+  .el-form-item__content input.el-input__inner {
+    font-size: 1em;
+  }
+
+  button {
+    // font-size: 1.2em;
+    text-transform: none;
+  }
+}
+
+.add-tag-btn {
+  padding: 0 10px 10px;
+
+  .el-radio {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &__label {
+      color: #96caff;
+      margin-left: 5px;
+      padding: 0;
+
+      &:hover {
+        border-bottom: 1px solid #96caff;
+      }
+    }
+  }
+}

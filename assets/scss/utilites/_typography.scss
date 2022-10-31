@@ -1,0 +1,41 @@
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+%select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+%default-crm-font {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+@mixin text-wrapper($font-size, $line-height: inherit, $color: $TSC_MAIN_COLOR, $font-weight: normal, $family: inherit) {
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+
+  @if $family != unset {
+    font-family: $family;
+  }
+}
+
+@mixin gradient-text($font-size, $line-height: inherit, $font-weight: normal) {
+  background-image: linear-gradient(180deg, $TSC_MAIN_COLOR 35%, $TSC_MAIN_COLOR 266.7%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  @include text-wrapper($font-size, $line-height, transparent, $font-weight);
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    // IE10+
+    background-image: none !important;
+    color: $TSC_MAIN_COLOR !important;
+  }
+}
